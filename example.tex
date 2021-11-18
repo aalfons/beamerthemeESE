@@ -1,0 +1,156 @@
+\documentclass[pdfpagelabels=false, usepdftitle=false]{beamer}
+
+\usetheme{ESE}
+
+\title{ESE Beamer theme}
+
+% \subtitle{}
+
+% - Use the \inst{?} command only if the authors have different affiliation.
+\author{
+  Andreas~Alfons
+}
+
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+\institute[EUR]{Erasmus School of Economics, Erasmus University Rotterdam}
+
+\date{November~18, 2021}
+
+
+% ---------------------
+% begin of presentation
+% ---------------------
+
+\begin{document}
+
+
+\ESEtitleframe  % note that we *do not* use \titlepage
+
+\begin{frame}[fragile]{Looks of list environments}
+\begin{itemize}
+  \item Important point
+  \item Not really an important point, but let's pretend it is
+  \arrowitem Command \verb+\arrowitem+ is a shortcut for
+  \verb+\item[$\longrightarrow$]+
+\end{itemize}
+
+\vfill
+
+\begin{enumerate}
+  \item Breathe in
+  \item Breathe out
+\end{enumerate}
+
+\vfill
+
+\begin{description}
+  \item[ESE Beamer theme] looks simple and nice
+\end{description}
+\end{frame}
+
+\begin{frame}[fragile]{Looks of block environments}
+\begin{block}{Making things stand out}
+This looks really important
+\end{block}
+
+\vfill
+
+\begin{alertblock}{Colors}
+Official Erasmus colors are available, see the next slide
+\end{alertblock}
+\end{frame}
+
+
+\begin{frame}[fragile]{Colors}
+The ESE Beamer theme defines the following official Erasmus colors:
+
+\bigskip
+\textcolor{EURbrightgreen}{\code{EURbrightgreen}} (for digital purposes):
+RGB 12/128/102
+
+\medskip
+\textcolor{EURgreen}{\code{EURgreen}}: RGB 0/35/40
+
+\medskip
+\textcolor{EURwarmgrey}{\code{EURwarmgrey}/\code{EURwarmgray}}: RGB 227/218/216
+{\small (not really useful)}
+
+\medskip
+\textcolor{ESEyellow}{\code{ESEyellow}}: RGB 255/215/0
+
+\vfill
+
+\begin{itemize}
+  \arrowitem Command \verb+\alert()+ uses \alert{\code{EURbrightgreen}} for
+  highlighting
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Using the theme}
+\vspace{-2ex}
+\begin{itemize}
+  \arrowitem Include \verb+\usetheme{ESE}+ in the preamble
+  \arrowitem Use \verb+\ESEtitlepage+ to generate the title page
+\end{itemize}
+
+\vfill
+
+\alert{Theme options}:
+\begin{itemize}
+  \item \verb+framenumbers+: Display slide numbers in the bottom right corner
+  \item \verb+navigation+: Display a navigation bar on the left hand side
+  \item \verb+nologo+: Do not display the Erasmus logo in the bottom right
+  corner
+  \item \verb+notes+: Include notes (generated with \verb+\note{}+ in between
+  slides) in the final document
+  \item \verb+sectiontitles+: Display a slide with the section title at the
+  start of each section
+\end{itemize}
+
+\alert{Example}: \verb+\usetheme[framenumbers, sectiontitles]{ESE}+
+\end{frame}
+
+
+\begin{frame}[fragile]{Commands for mathematical notation}
+For mathematical notation inside math environments, the following commands are
+available:
+
+\bigskip
+\begin{itemize}
+  \item \verb+\mat{}+: For formatting matrices, e.g., $\mat{X}$
+  \medskip
+  \item \verb+\vect{}+: For formatting vectors, e.g., $\vect{x}$
+  \medskip
+  \item \verb+\obs{}+ For formatting observations, e.g., $\obs{x}$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{Other commands povided by the theme}
+For writing about software, the following commands are available:
+
+\bigskip
+\begin{itemize}
+  \item \verb+\proglang{}+: For highlighting programming languages, e.g.,
+  \proglang{R} \\
+  \smallskip
+  {\small (has no effect if you already use a sans serif font)}
+  \medskip
+  \item \verb+\pkg{}+: For highlighting software packages, e.g., \pkg{robmed}
+  \medskip
+  \item \verb+\code{}+ For highlighting functions, e.g.,
+  \code{test\_mediation()}
+\end{itemize}
+
+\vfill
+
+\begin{itemize}
+  \arrowitem Special characters currently need to be escaped within those
+  commands, e.g., \verb+\_+ for underscores
+\end{itemize}
+\end{frame}
+
+
+\end{document}

@@ -274,3 +274,13 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# RStudio project file
+.Rproj.user
+beamerthemeESE.Rproj
+
+# HTML version of README
+README.html
+
+# MacOS system files
+*.DS_Store
