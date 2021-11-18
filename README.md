@@ -1,6 +1,6 @@
 # ESE Beamer theme
 
-LaTeX Beamer theme for Erasmus School of Economics based on the Microsoft Powerpoint template.
+LaTeX Beamer theme for [Erasmus School of Economics](https://www.eur.nl/en/ese) based on the Microsoft Powerpoint template.
 
 
 ## Using the theme
@@ -38,8 +38,8 @@ available:
 
 For writing about software, the following commands are available:
 
-- `\proglang{}` For highlighting programming languages, e.g., `\proglang{[R](https://www.r-project.org/)}`.  Note that this has no effect if a sans serif font is already used, such as the default Beamer font.
-- `\pkg{}` For highlighting software packages, e.g., `\pkg{[robmed](https://github.com/aalfons/robmed)}`.
+- `\proglang{}` For highlighting programming languages, e.g., `\proglang{R}`.  Note that this has no effect if a sans serif font is already used, such as the default Beamer font.
+- `\pkg{}` For highlighting software packages, e.g., `\pkg{robmed}`.
 - `\code{}` For highlighting functions, e.g., `\pkg{robmed()}`.
 
 Special characters currently need to be escaped within those commands, e.g., `\_` for underscores so that function `test_mediation()` should be typeset as `\code{test\_mediation()}`.
