@@ -54,7 +54,7 @@ The ESE Beamer theme defines the following [official Erasmus colors](https://www
 - `EURwarmgrey`/`EURwarmgray`: RGB 227/218/216 (not really useful as this is a very light gray)
 - `ESEyellow`: RGB 255/215/0
 
-Command `\alert()}` uses `EURbrightgreen` for highlighting.  The remaining colors can be used with `\textcolor{}{}` to highlight text, e.g.:
+Command `\alert{}` uses `EURbrightgreen` for highlighting.  The remaining colors can be used with `\textcolor{}{}` to highlight text, e.g.:
 ```
 \textcolor{EURgreen}{This is a very dark green (RAL 6012 black green).}
 ```
@@ -62,7 +62,7 @@ Command `\alert()}` uses `EURbrightgreen` for highlighting.  The remaining color
 
 ## Report issues and request features
 
-If you experience any bugs or issues or if you have any suggestions for additional features, please submit an issue via the *Issues* tab of this repository.  Please have a look at existing issues first to see if your problem or feature request has already been discussed.
+If you experience any bugs or issues or if you have any suggestions for additional features, please submit an issue via the [*Issues*](https://github.com/aalfons/beamerthemeESE/issues) tab of this repository.  Please have a look at existing issues first to see if your problem or feature request has already been discussed.
 
 
 ## Contribute to the package
