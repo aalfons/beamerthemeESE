@@ -5,7 +5,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{beamerthemeESE}%
-[2021/11/26 Erasmus School of Economics beamer theme 0.3.1]
+[2021/12/13 Erasmus School of Economics beamer theme 0.3.2]
 
 
 %% process options
@@ -197,6 +197,11 @@
 \fi
 
 
+%% space between institutions on title page
+\makeatletter
+\def\beamer@andinst{\\[0.5em]}
+\makeatother
+
 %% new command to create title page
 \newcommand{\ESEtitleframe}{
   % set ESE title page design as background (this is wrapped in curly braces
@@ -225,6 +230,11 @@
     \fi
     \vskip1em\par
     {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor}\par
+    \ifx\insertinstitute@empty
+    \else
+      \vskip0.75em\par
+    {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute}\par
+    \fi
     \ifx\insertdate\@empty
     \else
       \vskip1em\par
